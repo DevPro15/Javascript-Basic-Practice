@@ -105,7 +105,7 @@ console.log(truck["engine"]["pistons"][0]["maker"]);
 /* Builtin Javascript function */
 
 // it gives the total number elements
-array.length();
+dummytext.length();
 
 // it removes the 1st element from an array
 dummytext.shift();
