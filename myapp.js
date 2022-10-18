@@ -97,3 +97,5 @@ console.log(truck.make);
 // computed member access
 
 console.log(truck.engine.pistons[0].maker);
+console.log(array[1 - 1 + 1]);
+console.log(truck["engine"]["pistons"][0]["maker"]);
