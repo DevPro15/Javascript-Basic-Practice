@@ -85,4 +85,15 @@ var array = [
     return "drive";
   },
 ];
+
 /* ----------------------------------------------------------------------------------*/
+
+/* MEMBERS */
+
+// members are the objects which are present in variable & members are accessed with "."
+
+console.log(truck.make);
+
+// computed member access
+
+console.log(truck.engine.pistons[0].maker);
