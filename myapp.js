@@ -60,4 +60,29 @@ var car = {
 
 var shoppinglist = ["Apple", "Orange", "Pear"];
 
+//Objects & Arrays Embedding
+
+var truck = {
+  make: "volvo",
+  speed: 160,
+  engine: {
+    size: 2.0,
+    make: "bmw",
+    fuel: "petrol",
+    pistons: [{ maker: "BMW" }, { maker: "toyota" }],
+  },
+  drive: function () {
+    return "drive";
+  },
+};
+
+var array = [
+  "string",
+  100,
+  ["embed", 200],
+  { car: "ford" },
+  function () {
+    return "drive";
+  },
+];
 /* ----------------------------------------------------------------------------------*/
