@@ -1,4 +1,4 @@
-/* Ways of Console */
+/* WAYS OF CONSOLE*/
 
 // Mostly use for debugging and checking the data
 
@@ -18,10 +18,10 @@ console.log("string", 10.11, true, false, null, num);
 
 /* ----------------------------------------------------------------------------------*/
 
-/* Parameters & Arguments */
+/* PARAMETERS & ARGUMENTS */
 
 // Parameters
-// parameters are variable that contains value 
+// parameters are variable that contains value
 
 function makeCoffee(sugar, milk) {
   var instructions = "Boil Water";
@@ -41,5 +41,23 @@ function makeCoffee(sugar, milk) {
 // arguments are value which are passed to parameters
 
 console.log(makeCoffee(2, 20));
+
+/* ----------------------------------------------------------------------------------*/
+
+/* OBJECTS & ARRAYS */
+
+//  Objects
+
+var car = {
+  color: "red",
+  speed: 200,
+  drive: function () {
+    return "drive";
+  },
+};
+
+//  Arrays
+
+var shoppinglist = ["Apple", "Orange", "Pear"];
 
 /* ----------------------------------------------------------------------------------*/
