@@ -21,6 +21,7 @@ console.log("string", 10.11, true, false, null, num);
 /* Parameters & Arguments */
 
 // Parameters
+// parameters are variable that contains value 
 
 function makeCoffee(sugar, milk) {
   var instructions = "Boil Water";
@@ -37,6 +38,8 @@ function makeCoffee(sugar, milk) {
 }
 
 // Arguments
+// arguments are value which are passed to parameters
+
 console.log(makeCoffee(2, 20));
 
 /* ----------------------------------------------------------------------------------*/
