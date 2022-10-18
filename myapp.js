@@ -99,3 +99,36 @@ console.log(truck.make);
 console.log(truck.engine.pistons[0].maker);
 console.log(array[1 - 1 + 1]);
 console.log(truck["engine"]["pistons"][0]["maker"]);
+
+/* ----------------------------------------------------------------------------------*/
+
+/* Builtin Javascript function */
+
+// it gives the total number elements
+array.length();
+
+// it removes the 1st element from an array
+dummytext.shift();
+
+// it removes the last element from an array
+dummytext.pop();
+
+// it adds elements from the start in an array
+dummytext.unshift("string", "dummy");
+
+// it adds elements from the end in an array
+dummytext.push(200, "text");
+
+// it deletes the elements inside an array at any position
+// such as first number show's the position and second number tells how many elements you want to delete
+dummytext.splice(2, 0);
+
+// it adds the element inside an array at any position
+// such as first number show's the position and second number tells how many elements you want to delete
+// & 3rd show's the elements you're adding after the 2nd element
+dummytext.splice(2, 0, "hello", "world");
+
+// it replaces the element inside an array at any position
+// such as first number show's the position and second number tells how many elements you want to delete
+// & 3rd show's the elements you're adding after the 3rd element
+dummytext.splice(3, 2, "nice", 100);
