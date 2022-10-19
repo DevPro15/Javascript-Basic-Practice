@@ -132,3 +132,39 @@ dummytext.splice(2, 0, "hello", "world");
 // such as first number show's the position and second number tells how many elements you want to delete
 // & 3rd show's the elements you're adding after the 3rd element
 dummytext.splice(3, 2, "nice", 100);
+
+/* ----------------------------------------------------------------------------------*/
+
+// Callable Objects
+
+function Callable() {
+  var fullname = "Lawrence Turton";
+
+  function concat(Callable) {
+    return "MR." + Callable;
+  }
+  return concat(fullname);
+}
+var obj = [{}];
+
+// ------------------
+
+function call(name) {
+  return name.firstname + name.lastname;
+}
+console.log(call({ firstname: "Lawrence", lastname: "Turton" }));
+
+// ------------------
+
+function cat(fullname2) {
+  return fullname2();
+}
+
+console.log(
+  cat(function () {
+    return "embed";
+  })
+);
+
+/* ----------------------------------------------------------------------------------*/
+
