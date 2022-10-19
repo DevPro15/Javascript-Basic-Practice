@@ -168,3 +168,81 @@ console.log(
 
 /* ----------------------------------------------------------------------------------*/
 
+/* MEMORY HOISTING */
+
+// the javascript starts running from top-left and as
+// it moves it reads 'myName' but can't read the value then shows undefined, further on it moves to 'printName'
+// which is a function then goes down now he knows the value of 'myName' but as console is call first he can't print it but for the
+// function its different as he knows it's a function then he goes through it and hoist (grab) the value and shows up
+
+console.log(myName, printName());
+var myName = "Lawrence";
+
+function printName() {
+  return "johnnnn";
+}
+
+// output
+
+undefined, "johnnnn";
+
+/* ----------------------------------------------------------------------------------*/
+
+/* SCOPE & CLOSURES */
+
+// Scope = Access
+
+//scope is limit of variable accessing such as
+
+console.log(mice);
+
+var mice = "micky";
+
+/* output */
+
+undefined;
+
+//it is because var is defined after it is call so it can't be accessed check out another
+// example
+
+function cute() {
+  return note;
+}
+var note = "write";
+
+/* OutPut */
+
+("note is undefined");
+
+//this because its call after the function
+
+/* CLOSURE */
+
+// Execution Stack
+
+// take an example below when a function runs it knows the value of a and then goes directly to return add()
+// but now he doesn't removes the value of a instead its saves it which is known as closure and move to add function
+// where it grabs b and returns a + b
+
+function runExpression() {
+  var a = 10;
+
+  function add() {
+    var b = 90;
+    return a + b;
+  }
+  return add();
+}
+/* output */ 
+
+100;
+
+// functions are callable objects, callable objects have scopes just like regular objects
+//  and you can have objects embeded in objects but callable objects are special infact we have temporary symbols
+// table and the language feature is called closures where any sort of symbol that is created inside our execution
+// stack as long as there is a another callable object still in the execution stack it keeps the symbol and encloses 
+// everything together, it keeps those symbol vast without executing all those instructions in execution stack 
+// or main thread and then once all of it's been executed it returns final value and it does all the operations.
+// It then clears out the symobols which can no longer in our program (Garbage collection) 
+
+/* ----------------------------------------------------------------------------------*/
