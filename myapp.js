@@ -233,16 +233,88 @@ function runExpression() {
   }
   return add();
 }
-/* output */ 
+/* output */
 
 100;
 
 // functions are callable objects, callable objects have scopes just like regular objects
 //  and you can have objects embeded in objects but callable objects are special infact we have temporary symbols
 // table and the language feature is called closures where any sort of symbol that is created inside our execution
-// stack as long as there is a another callable object still in the execution stack it keeps the symbol and encloses 
-// everything together, it keeps those symbol vast without executing all those instructions in execution stack 
+// stack as long as there is a another callable object still in the execution stack it keeps the symbol and encloses
+// everything together, it keeps those symbol vast without executing all those instructions in execution stack
 // or main thread and then once all of it's been executed it returns final value and it does all the operations.
-// It then clears out the symobols which can no longer in our program (Garbage collection) 
+// It then clears out the symobols which can no longer in our program (Garbage collection)
 
 /* ----------------------------------------------------------------------------------*/
+
+/* Constructor */
+
+function Apple(x, y, color, score) {
+  this.x = x;
+  this.y = y;
+  this.color = color;
+  this.score = score;
+}
+var apple1 = new Apple(10, 20, "red", 200);
+
+// output
+
+Apple = { x: 10, y: 20, color: "red", score: 200 };
+
+/* ----------------------------------------------------------------------------------*/
+
+/* ProtoType  */
+
+// prototypes are unique to javascript. Javascript works with objects withvery specific way
+//that other languages does not neccessarly used. Prototypes are just shared objects they
+//are objects that have properties and method that can be accessed by arrange of different objects
+// which all varies on how that object is constructed
+
+/* ----------------------------------------------------------------------------------*/
+
+/* PROTOTYPE with CONSTRUCTOR  */
+
+function Race(color, weight) {
+  this.color = color;
+  this.weight = weight;
+  this.eat = function () {
+    return "eat the apple";
+  };
+  this.throw = function () {
+    return "throw the apple";
+  };
+}
+var race1 = new Race("red", 99);
+var race2 = new Race("yellow", 109);
+var race3 = new Race("green", 299);
+
+// output
+
+apple1;
+// Apple{ color: "red", weight: 99, eat: function, throw: function}
+apple2;
+// Apple{ color: "yellow", weight: 109, eat: function, throw: function}
+apple3;
+// Apple{ color: "green", weight: 299, eat: function, throw: function}
+
+/* as you can see three copies of 'eat' and 'throw' were made and to stop similar copies we use prototype */
+
+// -----------------------------
+
+function Pro(color, weight) {
+  this.color = color;
+  this.weight = weight;
+}
+
+Pro.prototype = {
+  eat: function () {
+    return this;
+  },
+  throw: function () {
+    return "throw the apple";
+  },
+};
+
+var pro1 = new Race("red", 99);
+var pro2 = new Race("yellow", 109);
+var pro3 = new Race("green", 299);
