@@ -330,7 +330,9 @@ such as ==, ===, !=,!==,>,<,>=,<=,");*/
 
 /* If Statements */
 
-// if statements are conditional statements which is used to check is the comparison equal to what you expected
+// 'if' statements are conditional statements which is used to compare and see if the comparison matches it will
+// the out you want it matches and then there is "else" condition which will render if condition doesn't matches
+// And fpor multiple statements you use 'else if'
 // such as
 
 var carsLeft = 1,
