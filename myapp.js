@@ -318,3 +318,10 @@ Pro.prototype = {
 var pro1 = new Race("red", 99);
 var pro2 = new Race("yellow", 109);
 var pro3 = new Race("green", 299);
+
+/* ----------------------------------------------------------------------------------*/
+
+/* Comparison Operstors */
+
+/*(" comparison operators are operators which arse used to compare values
+such as ==, ===, !=,!==,>,<,>=,<=,");*/
