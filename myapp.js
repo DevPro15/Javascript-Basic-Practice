@@ -325,3 +325,24 @@ var pro3 = new Race("green", 299);
 
 /*(" comparison operators are operators which arse used to compare values
 such as ==, ===, !=,!==,>,<,>=,<=,");*/
+
+/* ----------------------------------------------------------------------------------*/
+
+/* If Statements */
+
+// if statements are conditional statements which is used to check is the comparison equal to what you expected
+// such as
+
+var carsLeft = 1,
+  carsRight = 0,
+  greenMan = "yes";
+
+if (greenMan === "yes") {
+  console.log("cross the road");
+} else if (greenMan === "yes" && (carsLeft === 0 || carsRight === 0)) {
+  console.log("All clear! Cross the road");
+} else {
+  console.log("Stay where you are!");
+}
+
+/* ----------------------------------------------------------------------------------*/
